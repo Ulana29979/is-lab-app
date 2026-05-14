@@ -3,8 +3,6 @@ name: CI/CD Build and Push to GHCR
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 env:
   REGISTRY: ghcr.io
