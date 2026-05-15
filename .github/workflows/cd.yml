@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             cd ~/deploy/is-stack
-            echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u Ulana29979 --password-stdin
+            echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ulana29979 --password-stdin
             docker compose pull app
             docker compose up -d app
             docker image prune -f
